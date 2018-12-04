@@ -16,6 +16,8 @@ a {
     text-decoration: none;
 }
 
+/* home */
+
 .home__container {
     text-align: center;
     margin-top: 250px;
@@ -57,9 +59,11 @@ header {
     font-size: 40px;
     padding: 30px; 
 }
+
 .container__stopwatch {
     width: 100%;
 }
+
 .stopwatch {
     
     border-radius: 40px;
@@ -132,6 +136,73 @@ p {
     background: linear-gradient(to right, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
 }
 
+/* Ambos */
 
+header {
+    text-align: right;
+    margin-right: 55px;
+}
+
+.menu {
+    font-size: 40px;
+    padding: 30px; 
+}
+
+.container {
+    border-bottom: 1px solid  rgb(109, 109, 109);
+    margin: 30px;
+    display: flex; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.q {
+    display: flex; 
+    margin-right: 10px;
+    justify-content: space-around;
+   
+}
+
+.both__title-position {
+    font-size: 40px;
+    text-align: left;
+   
+}
+
+.both__timer {
+    font-size: 100px;
+    margin: 15px;
+}
+
+.both-btn {
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    
+}
+
+.both__btn-start {
+    background: rgba(76,208,61,1);
+    background: -moz-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(76,208,61,1)), color-stop(50%, rgba(76,208,61,1)), color-stop(100%, rgba(120,224,94,1)));
+    background: -webkit-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: -o-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: -ms-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: linear-gradient(to right, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+}
+
+.both-btn.btn-reset,
+.both-btn.btn-start  {
+    margin-top: 0px;
+}
 
 
