@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Oswald', monospace; 
+    font-family: 'Anton', monospace; 
 }
 
 a {
@@ -18,10 +18,11 @@ a {
 
 .home__container {
     text-align: center;
+    margin-top: 250px;
 }
 
 .home__title {
-    font-size: 80px;
+    font-size: 60px;
     margin: 100px 0;
 } 
 
@@ -32,21 +33,21 @@ a {
 }
 
 .home__btn-function {
-    background-color: rgb(201, 208, 214);
+    background-color: rgb(229, 229, 229);
     margin: 30px;
     padding: 40px 100px;
     border-radius: 100px;
 }
 
 .btn-link {
-    font-size: 50px;
-    color: #000;
+    font-size: 40px;
+    color: rgb(109, 109, 109);
     font-weight: 200;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
-/* Penalty Box Manager  and Penalty Timer */
+/* Penalty Box Manager and Penalty Timer */
 header {
     text-align: right;
     margin-right: 55px;
@@ -60,11 +61,14 @@ header {
     width: 100%;
 }
 .stopwatch {
-    box-shadow: 20px 20px 30px gray;
+    
     border-radius: 40px;
     margin: 40px 25px;
     padding: 50px 40px;
     display: flex;
+    -webkit-box-shadow: 0px -5px 300px -55px rgba(207,205,207,1);
+    -moz-box-shadow: 0px -5px 300px -55px rgba(207,205,207,1);
+    box-shadow: 0px -5px 300px -55px rgba(207,205,207,1);
 }
 
 .stopwatch__col-1 {
@@ -84,33 +88,50 @@ header {
 
 p {
     font-size: 150px;
+    font-weight: 200;
 }
 
 .btn {
+    font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 3px;
     font-size: 40px;
-    color: #000;
+    color: rgb(0, 0, 0);
     margin-top: 30px;
     padding: 40px 60px;
     border-radius: 100px;
 }
 
 .btn-reset { 
-    background-color: rgb(201, 208, 214);
+    background-color: rgb(229, 229, 229);
+    color: rgb(109, 109, 109);
     margin-top: 77px;
 }
 
 .btn-start { 
-    background-color: green;  
-}
+    background: rgba(76,208,61,1);
+    background: -moz-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(76,208,61,1)), color-stop(50%, rgba(76,208,61,1)), color-stop(100%, rgba(120,224,94,1)));
+    background: -webkit-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: -o-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: -ms-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: linear-gradient(to right, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    }
 
 .n-sei {
     text-align: center;
 }
 .btn-all {
-    background-color: green;
+    background: rgba(76,208,61,1);
+    background: -moz-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(76,208,61,1)), color-stop(50%, rgba(76,208,61,1)), color-stop(100%, rgba(120,224,94,1)));
+    background: -webkit-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: -o-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: -ms-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
+    background: linear-gradient(to right, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
 }
+
+
 
 
