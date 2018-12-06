@@ -55,9 +55,27 @@ header {
     margin-right: 55px;
 }
 
-.menu {
-    font-size: 40px;
-    padding: 30px; 
+.menu img {
+    width: 70px;
+    padding-top: 30px;
+}
+
+nav:hover ul{
+    display: block;
+}
+
+.menu__list {
+    display: none;
+}
+
+.menu__list-item {
+    font-size: 20px;
+    padding: 20px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.menu__list-item a {
+    color: rgb(0, 0, 0);
 }
 
 .container__stopwatch {
@@ -114,6 +132,7 @@ header {
 
 .btn__start, 
 .btn__start-all { 
+    color: rgb(17, 120, 18);
     background: rgba(76,208,61,1);
     background: -moz-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(76,208,61,1)), color-stop(50%, rgba(76,208,61,1)), color-stop(100%, rgba(120,224,94,1)));
@@ -121,23 +140,25 @@ header {
     background: -o-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
     background: -ms-linear-gradient(left, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
     background: linear-gradient(to right, rgba(76,208,61,1) 0%, rgba(76,208,61,1) 50%, rgba(120,224,94,1) 100%);
-    }
+}
+
+.btn__stop ,
+.btn__stop-all {
+    background: rgba(251,20,38,1);
+    background: -moz-linear-gradient(-45deg, rgba(251,20,38,1) 0%, rgba(240,47,23,1) 26%, rgba(246,41,12,1) 58%, rgba(241,111,92,1) 76%, rgba(251,75,134,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(251,20,38,1)), color-stop(26%, rgba(240,47,23,1)), color-stop(58%, rgba(246,41,12,1)), color-stop(76%, rgba(241,111,92,1)), color-stop(100%, rgba(251,75,134,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(251,20,38,1) 0%, rgba(240,47,23,1) 26%, rgba(246,41,12,1) 58%, rgba(241,111,92,1) 76%, rgba(251,75,134,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(251,20,38,1) 0%, rgba(240,47,23,1) 26%, rgba(246,41,12,1) 58%, rgba(241,111,92,1) 76%, rgba(251,75,134,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(251,20,38,1) 0%, rgba(240,47,23,1) 26%, rgba(246,41,12,1) 58%, rgba(241,111,92,1) 76%, rgba(251,75,134,1) 100%);
+    background: linear-gradient(135deg, rgba(251,20,38,1) 0%, rgba(240,47,23,1) 26%, rgba(246,41,12,1) 58%, rgba(241,111,92,1) 76%, rgba(251,75,134,1) 100%);
+    color: rgb(125, 9, 18)
+}
 
 .btn__all{
     text-align: center;
 }
 
 /* page both */
-header {
-    text-align: right;
-    margin-right: 55px;
-}
-
-.menu {
-    font-size: 40px;
-    padding: 30px; 
-}
-
 .both__box {
     border-bottom: 1px solid  rgb(109, 109, 109);
     margin: 30px;
@@ -158,7 +179,7 @@ header {
     text-align: left;  
 }
 
-.both__timer {
+.box__timer-btn .timer {
     font-size: 100px;
     margin: 15px;
 }
