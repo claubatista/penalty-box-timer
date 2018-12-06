@@ -17,7 +17,6 @@ a {
 }
 
 /* home */
-
 .home__container {
     text-align: center;
     margin-top: 250px;
@@ -71,7 +70,7 @@ nav:hover ul{
 .menu__list-item {
     font-size: 20px;
     padding: 20px 0 10px 0;
-    text-transform: uppercase;
+    font-family: 'Anton', monospace; 
 }
 
 .menu__list-item a {
