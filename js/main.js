@@ -45,17 +45,26 @@ buttonStopAll.addEventListener('click', function() {
     if (buttonStopAll.classList.contains('btn__stop-all')) {
         buttonStopAll.innerHTML = 'STOP ALL'
         for (let i = 0; i < playTimer.length; i++) {
-            if ()
-            stopwatch[i] = setInterval(function() {
-                timers[i]++
-                const time = Math.floor(timers[i] / 60) + ':' + (timers[i]%60 <= 9 ? '0' + timers[i]%60 : timers[i]%60)
-                timer[i].innerHTML = time.padStart(5, '0')
-            }, 1000)
+           if (playTimer[i].classList.contains('btn__start') && timers[i] !== 0) {
+                playTimer[i].classList.toggle('btn__start')
+                playTimer[i].classList.toggle('btn__stop')
+                playTimer[i].innerHTML = 'STOP'
+                stopwatch[i] = setInterval(function() {
+                    timers[i]++
+                    const time = Math.floor(timers[i] / 60) + ':' + (timers[i]%60 <= 9 ? '0' + timers[i]%60 : timers[i]%60)
+                    timer[i].innerHTML = time.padStart(5, '0')
+                }, 1000)
+           }  
         }
     }else {
         buttonStopAll.innerHTML = 'START ALL'
             for (let i = 0; i < playTimer.length; i++) {
-                clearInterval(stopwatch[i]) 
+                if (playTimer[i].classList.contains('btn__stop')){
+                    clearInterval(stopwatch[i]) 
+                    playTimer[i].classList.toggle('btn__start')
+                    playTimer[i].classList.toggle('btn__stop')
+                    playTimer[i].innerHTML = 'START'
+                }
         }
        
     }
