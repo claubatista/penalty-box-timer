@@ -31,8 +31,8 @@ a {
 }
 
 .home__title {
-    font-size: 60px;
-    margin: 100px 0;
+    font-size: 32px;
+    margin: 15px 0;
 } 
 
 .home__btn {
@@ -43,18 +43,18 @@ a {
 
 .home__btn-function {
     background-color: rgb(229, 229, 229);
-    margin: 40px;
-    padding: 40px 100px;
+    margin: 20px;
+    padding: 20px 25px;
     border-radius: 100px;
     min-width: 70vw;
     opacity: .6;
 }
 
 .btn__link {
-    font-size: 30px;
+    font-size: 12px;
     color: rgb(0, 0, 0);
     font-weight: 200;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 
@@ -65,8 +65,8 @@ header {
 }
 
 .menu img {
-    width: 70px;
-    padding-top: 30px;
+    width: 30px;
+    padding-top: 15px;
 }
 
 nav:hover ul{
@@ -78,8 +78,8 @@ nav:hover ul{
 }
 
 .menu__list-item {
-    font-size: 40px;
-    padding: 30px 20px 20px 0;
+    font-size: 14px;
+    padding: 30px 15px 20px 0;
     font-family: 'Anton', monospace; 
     display: inline;
 }
@@ -94,7 +94,7 @@ nav:hover ul{
 
 .stopwatch {
     border-radius: 40px;
-    margin: 40px 25px;
+    margin: 6px 25px;
     padding: 20px 40px;
     display: flex;
     -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,.2);
@@ -113,12 +113,12 @@ nav:hover ul{
 }
 
 .title__position {
-    font-size: 40px;
-    margin-top: 70px;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .timer {
-    font-size: 110px;
+    font-size: 45px;
     font-weight: 200;
 }
 
@@ -127,10 +127,10 @@ nav:hover ul{
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 3px;
-    font-size: 30px;
+    font-size: 14px;
     color: rgb(0, 0, 0);
-    margin-top: 15px;
-    padding: 40px 60px;
+    margin-top: 8px;
+    padding: 10px 30px;
     border-radius: 100px;
     text-align: center;
 }
@@ -138,7 +138,7 @@ nav:hover ul{
 .btn__reset { 
     background-color: rgb(229, 229, 229);
     color: rgb(109, 109, 109);
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .btn__start, 
@@ -168,7 +168,7 @@ nav:hover ul{
 /* page both */
 .both__box {
     border-bottom: 1px solid  rgb(109, 109, 109);
-    margin: 10px 35px;
+    margin: 5px 10px;
     display: flex; 
     display: flex; 
     justify-content: space-between;
@@ -178,16 +178,16 @@ nav:hover ul{
 .box__timer-btn {
     display: flex; 
     margin-right: 10px;
-    justify-content: space-around;  
+    justify-content: space-around; 
 }
 
 .both__title-position {
-    font-size: 40px;
+    font-size: 20px;
     text-align: left;  
 }
 
 .box__timer-btn .timer {
-    font-size: 90px;
+    font-size: 30px;
     margin: 10px;
 }
 
@@ -196,15 +196,15 @@ nav:hover ul{
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 3px;
-    font-size: 30px;
+    font-size: 12px;
     color: rgb(0, 0, 0);
-    padding: 20px;
     margin: 0 15px;
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px; 
-    width: 135px;
-    height: 135px; 
+    width: 60px;
+    height: 60px; 
+    text-align: center;
 }
 
 .both__btn.btn__reset,
