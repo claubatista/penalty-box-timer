@@ -5,7 +5,7 @@ const buttonStopAll = document.querySelector('.btn__stop-all')
 
 
 let stopwatch = [playTimer.length]
-let timers = [0, 0, 0, 0, 0, 0, 0, 0]
+let timers = [30, 30, 30, 30, 30, 30, 30, 30]
 
 for (let i = 0; i < playTimer.length; i++) {
     playTimer[i].addEventListener('click', function() {
@@ -16,7 +16,7 @@ for (let i = 0; i < playTimer.length; i++) {
         this.innerHTML = 'STOP'
 
         stopwatch[i] = setInterval(function () {
-            timers[i]++
+            timers[i]--
             const time = Math.floor(timers[i] / 60) + ':' + (timers[i]%60 <= 9 ? '0' + timers[i]%60 : timers[i]%60)
             timer[i].innerHTML = time.padStart(5, '0')
         }, 1000)
@@ -33,8 +33,8 @@ for (let i = 0; i < playTimer.length; i++) {
             playTimer[i].classList.toggle('btn__stop')
             clearInterval(stopwatch[i])
         }
-        timers[i] = 0
-        timer[i].innerHTML = '00:00'
+        timers[i] = 30
+        timer[i].innerHTML = '00:30'
     })
 }
 

@@ -26,7 +26,7 @@ a {
     justify-content: center;
     min-height: 100vh;
 }
-.home__container {
+.home__box {
     text-align: center;
 }
 
@@ -46,7 +46,7 @@ a {
     margin: 20px;
     padding: 20px 25px;
     border-radius: 100px;
-    min-width: 70vw;
+    width: 100%;
     opacity: .6;
 }
 
@@ -61,17 +61,23 @@ a {
 /* Penalty Box Manager and Penalty Timer */
 header {
     text-align: right;
-    margin-right: 55px;
 }
 
-.menu img {
-    width: 30px;
-    padding-top: 15px;
+nav {
+    margin: 20px;
+    position: relative;
 }
 
-nav:hover ul{
-    display: block;
+.menu {
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
 }
+
 
 .menu__list {
     display: none;
@@ -79,9 +85,8 @@ nav:hover ul{
 
 .menu__list-item {
     font-size: 14px;
-    padding: 30px 15px 20px 0;
     font-family: 'Anton', monospace; 
-    display: inline;
+    display: block;
 }
 
 .menu__list-item a {
@@ -93,9 +98,9 @@ nav:hover ul{
 }
 
 .stopwatch {
-    border-radius: 40px;
-    margin: 6px 25px;
-    padding: 20px 40px;
+    border-radius: 20px;
+    margin: 20px 25px;
+    padding: 15px 25px 20px 25px;
     display: flex;
     -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,.2);
     -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,.2);
@@ -104,21 +109,21 @@ nav:hover ul{
 
 .stopwatch__col-1 {
     text-align: left;
-    width: 40%; 
+    width: 49%; 
 }
 
 .stopwatch__col-2 {
     text-align: right;
-    width: 55%;
+    width: 51%;
 }
 
 .title__position {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 17px;
 }
 
 .timer {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 200;
 }
 
@@ -127,18 +132,19 @@ nav:hover ul{
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 12px;
     color: rgb(0, 0, 0);
     margin-top: 8px;
-    padding: 10px 30px;
+    padding: 10px 15px;
     border-radius: 100px;
     text-align: center;
+    border: none;
 }
 
 .btn__reset { 
     background-color: rgb(229, 229, 229);
     color: rgb(109, 109, 109);
-    margin-top: 20px;
+    margin-top: 15.5px;
 }
 
 .btn__start, 
@@ -167,7 +173,6 @@ nav:hover ul{
 
 /* page both */
 .both__box {
-    border-bottom: 1px solid  rgb(109, 109, 109);
     margin: 5px 10px;
     display: flex; 
     display: flex; 
@@ -198,12 +203,12 @@ nav:hover ul{
     letter-spacing: 3px;
     font-size: 12px;
     color: rgb(0, 0, 0);
-    margin: 0 15px;
+    margin: 0 8px;
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px; 
-    width: 60px;
-    height: 60px; 
+    width: 55px;
+    height: 55px; 
     text-align: center;
 }
 
@@ -211,5 +216,45 @@ nav:hover ul{
 .both__btn.btn__start  {
     margin-top: 0px;
 }
+
+/* medias */
+@media(min-width: 576px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .stopwatch {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: 50%;
+    }
+
+    .menu {
+        right: 30px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .container {
+        width: 40%;
+    }
+} 
+
+@media(min-width: 1144px) {
+    .container {
+        width: 30%;
+    }
+} 
+
+@media(min-width: 2500px) {
+    .container {
+        width: 15%;
+    }
+} 
 
 
